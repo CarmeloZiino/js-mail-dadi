@@ -71,3 +71,29 @@ else if (numberPlayer = numberComputer){
 }
 
 
+// Tuttavia, se volessi usare un array per il gioco dei dadi, farei così:
+
+// 1. Creo un array per generare due tipi di punteggio, uno del Player1 e uno del Computer
+
+let scores = [
+    Math.floor(Math.random() * 6) + 1, // Punteggio Player1
+    Math.floor(Math.random() * 6) + 1 // Punteggio Computer
+]
+
+// 2. Stampo i punteggi sul console
+
+
+console.log("Punteggio del giocatore: " + scores[0]); // Punteggio Player1
+console.log("Punteggio del computer: " + scores[1]); // Punteggio Computer
+
+
+// 3. Creo delle condizioni per stabilire un vincitore
+
+if (scores[0] > scores[1]){
+    console.log("Hai Vinto!");
+}
+else if (scores[0] < scores[1]){
+    console.log("Il Computer ha vinto!");
+} 
+else if (scores[0] = scores[1]){
+    console.log("Pareggio! Riprova un'altra volta");}
