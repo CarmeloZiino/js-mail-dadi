@@ -37,3 +37,15 @@ const participantsEmail = [ "carmelo@gmail.com" , "danilo@gmail.com" , "alessand
 
 const personEmail = prompt("Inserisci qui la tua mail per sapere se sei stato invitato alla festa:" , "iltuonome@gmail.com");
 
+// 3. Attreverso .indexOf cerco l'email scritta nel Prompt dentro all'array
+
+let isInvited = participantsEmail.indexOf(personEmail) !== -1;
+
+// 4. Stampo il risultato
+
+if (isInvited) {
+    console.log("Ottimo! Puoi entrare alla festa!");
+} else {
+    console.log("Ops, non sei stato invitato!");
+}
+
