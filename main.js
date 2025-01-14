@@ -25,3 +25,15 @@
 
 
 
+// Esercizio Mail!!!
+
+// 1. Creo un Array con 5 mail
+
+const participantsEmail = [ "carmelo@gmail.com" , "danilo@gmail.com" , "alessandro@gmail.com" , "mauro@gmail.com" , "hyur@gmail.com"
+];
+
+
+// 2. Creo un Prompt dove l'utente inserisce la sua mail 
+
+const personEmail = prompt("Inserisci qui la tua mail per sapere se sei stato invitato alla festa:" , "iltuonome@gmail.com");
+
