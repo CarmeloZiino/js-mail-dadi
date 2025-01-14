@@ -1,4 +1,6 @@
-// !!!Mail
+
+
+// Esercizio Mail!!!
 // Crea una lista di email di invitati ad una festa.
 // Chiedi all’utente la sua email,
 // controlla che sia nella lista di chi può accedere,
@@ -8,24 +10,6 @@
 // Nota:
 // Non è necessario provvedere alla validazione delle email
 
-// !!!Gioco dei dadi
-// Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
-// Stabilire il vincitore, in base a chi fa il punteggio più alto.
-// Prima di partire a scrivere codice poniamoci qualche domanda:
-// Che ci sia un array da qualche parte?
-// Se dobbiamo confrontare qualcosa che "cosa" ci serve?
-// Consigli del giorno:
-// 1. scriviamo sempre prima dei commenti in italiano per capire cosa vogliamo fare
-// 2. javascript non fa nulla da solo, dobbiamo dirgli noi cosa vogliamo fare
-// 3. si ma noi cosa vogliamo fare?
-// 4. torniamo a scrivere in italiano
-// 5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
-// Buon lavoro e buon divertimento! :slightly_smiling_face
-
-
-
-
-// Esercizio Mail!!!
 
 // 1. Creo un Array con 5 mail
 
@@ -48,4 +32,42 @@ if (isInvited) {
 } else {
     console.log("Ops, non sei stato invitato!");
 }
+
+// Esercizio Gioco dei dadi!!!
+// Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
+// Stabilire il vincitore, in base a chi fa il punteggio più alto.
+// Prima di partire a scrivere codice poniamoci qualche domanda:
+// Che ci sia un array da qualche parte?
+// Se dobbiamo confrontare qualcosa che "cosa" ci serve?
+// Consigli del giorno:
+// 1. scriviamo sempre prima dei commenti in italiano per capire cosa vogliamo fare
+// 2. javascript non fa nulla da solo, dobbiamo dirgli noi cosa vogliamo fare
+// 3. si ma noi cosa vogliamo fare?
+// 4. torniamo a scrivere in italiano
+// 5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
+// Buon lavoro e buon divertimento! :slightly_smiling_face
+
+
+// 1. Generare un numero randomico da 1 a 6 - Numero Giocatore
+
+let numberPlayer = Math.floor(Math.random() * 6) + 1;
+console.log("Il punteggio del giocatore è:" , numberPlayer);
+
+// 2. Generare un numero randomico da 1 a 6 - Numero Computer
+
+let numberComputer = Math.floor(Math.random() * 6) + 1;
+console.log("Il punteggio del computer è:" , numberComputer);
+
+// 3. Creo delle condizioni per stabilire un vincitore
+
+if (numberPlayer > numberComputer){
+    console.log("Hai Vinto!");
+}
+else if (numberPlayer < numberComputer){
+    console.log("Il Computer ha vinto!");
+} 
+else if (numberPlayer = numberComputer){
+    console.log("Pareggio! Riprova un'altra volta");
+}
+
 
